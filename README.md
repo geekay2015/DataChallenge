@@ -9,9 +9,11 @@ You have access to the following summary data, which aggregates information on p
   1. https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html
   2. https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Outpatient.html
 
-#These data include both inpatient and outpatient procedures. 
-Inpatient procedures are coded with DRG codes (https://en.wikipedia.org/wiki/Diagnosis-related_group)
-outpatient procedures with APC codes (https://en.wikipedia.org/wiki/Ambulatory_Payment_Classification). 
+These data include both inpatient and outpatient procedures. 
+  Inpatient procedures are coded with DRG codes 
+  https://en.wikipedia.org/wiki/Diagnosis-related_group
+outpatient procedures with APC codes
+  https://en.wikipedia.org/wiki/Ambulatory_Payment_Classification
 
 Note that a single provider may submit claims for both inpatient and outpatient procedures, and a single patient may have undergone inpatient and outpatient procedures during the same period.
 
@@ -24,18 +26,20 @@ The patient and procedure data files are available here:
 ##Challenge Problems
 You have been contracted to analyze a set of claims data from the Medicare program for abnormalities. Specifically, you’ve been asked to answer the following three queries:
 #1. Some providers and regions may be consistently billing too much for procedures or billing for too many procedures, perhaps inadvertently. To better focus investigative efforts, the staff has asked you to answer the following questions:
-  1. Which three procedures have the highest relative variance in cost?
+  1.Which three procedures have the highest relative variance in cost?
 
-  2. Which three providers claimed the highest amount (on average) for the largest number of procedures?
-     To clarify, consider this example. If out of four providers, Provider A had the highest average claim amounts        for procedures 1, 2, and 3, Provider B had the highest average claim amount for procedure 4, and Provider C and      Provider D did not have the highest average claim amount for any procedure, then Provider A claimed the highest      amount for the largest number of procedures (3 versus 1, 0, and 0).
+  2.Which three providers claimed the highest amount (on average) for the largest number of procedures?
+    To clarify, consider this example. If out of four providers, Provider A had the highest average claim amounts       for procedures 1, 2, and 3, Provider B had the highest average claim amount for procedure 4, and Provider C and     Provider D did not have the highest average claim amount for any procedure, then Provider A claimed the highest     amount for the largest number of procedures (3 versus 1, 0, and 0).
     
-  3. The providers in which three regions claimed the highest average amount for the largest number of procedures? 
-     The region can be found in the Hospital Referral Region Description column in the summary data files.
-     To clarify, consider this example. If out of three regions, providers in San Jose, CA had the highest average        claim amount for procedure 1 (averaged across all providers in San Jose), providers in Boston, MA had the            highest average claim amounts for procedures 2 and 3 (averaged across all providers in Boston), and providers in      New York, NY had the highest average claim amount for procedure 4 (averaged across all providers in New York),       then the providers in Boston, MA claimed the highest average claim amount for the largest number of procedures       (2 versus 1 and 1).
+  3.The providers in which three regions claimed the highest average amount for the largest number of procedures? 
+    The region can be found in the Hospital Referral Region Description column in the summary data files.
+    To clarify, consider this example. If out of three regions, providers in San Jose, CA had the highest average       claim amount for procedure 1 (averaged across all providers in San Jose), providers in Boston, MA had the           highest average claim amounts for procedures 2 and 3 (averaged across all providers in Boston), and providers       in New York, NY had the highest average claim amount for procedure 4 (averaged across all providers in New          York), then the providers in Boston, MA claimed the highest average claim amount for the largest number of  
+    procedures (2 versus 1 and 1).
     
-  4. Which three providers had the largest claim difference for the largest number of procedures, where the claim         difference is the difference between the average amount claimed by a provider for a procedure and the average        amount reimbursed for that provider and procedure.
-    
-     To clarify, consider the following example. If out of two providers, if Provider A has the largest claim             difference for procedures 1 and 2, and Provider B has the largest claim difference for procedure 3, then             Provider A has the largest claim difference for the larger number of procedures (2 versus 1).
+  4.Which three providers had the largest claim difference for the largest number of procedures, where the claim        difference is the difference between the average amount claimed by a provider for a procedure and the average       amount reimbursed for that provider and procedure.
+    To clarify, consider the following example. If out of two providers, if Provider A has the largest claim  
+    difference for procedures 1 and 2, and Provider B has the largest claim difference for procedure 3, then    
+    Provider A has the largest claim difference for the larger number of procedures (2 versus 1).
 
 #2. Some providers and regions are likely to be different in more subtle ways. Based on the data provided, which three providers are least like the others? Briefly explain what seems to be different about these providers. Which three regions are least like the others? Briefly explain what seems to be different about these regions.
 
@@ -94,5 +98,3 @@ http://en.wikipedia.org/wiki/Diagnosis-related_group
 http://en.wikipedia.org/wiki/Ambulatory_Payment_Classification
 http://en.wikipedia.org/wiki/Delimiter#ASCII_delimited_text
 http://www.bcbsnc.com/assets/providers/public/pdfs/837Professional_5010_v2.9.pdf
-￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼
-
