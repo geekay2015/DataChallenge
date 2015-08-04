@@ -9,7 +9,9 @@ You have access to the following summary data, which aggregates information on p
   1. https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html
   2. https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Outpatient.html
 
-These data include both inpatient and outpatient procedures. Inpatient procedures are coded with DRG codes (https://en.wikipedia.org/wiki/Diagnosis-related_group), and outpatient procedures with APC codes (https://en.wikipedia.org/wiki/Ambulatory_Payment_Classification). 
+#These data include both inpatient and outpatient procedures. 
+Inpatient procedures are coded with DRG codes (https://en.wikipedia.org/wiki/Diagnosis-related_group)
+outpatient procedures with APC codes (https://en.wikipedia.org/wiki/Ambulatory_Payment_Classification). 
 
 Note that a single provider may submit claims for both inpatient and outpatient procedures, and a single patient may have undergone inpatient and outpatient procedures during the same period.
 
@@ -21,7 +23,7 @@ The patient and procedure data files are available here:
 
 ##Challenge Problems
 You have been contracted to analyze a set of claims data from the Medicare program for abnormalities. Specifically, you’ve been asked to answer the following three queries:
-1. Some providers and regions may be consistently billing too much for procedures or billing for too many procedures, perhaps inadvertently. To better focus investigative efforts, the staff has asked you to answer the following questions:
+#1. Some providers and regions may be consistently billing too much for procedures or billing for too many procedures, perhaps inadvertently. To better focus investigative efforts, the staff has asked you to answer the following questions:
   1. Which three procedures have the highest relative variance in cost?
 
   2. Which three providers claimed the highest amount (on average) for the largest number of procedures?
@@ -35,9 +37,9 @@ You have been contracted to analyze a set of claims data from the Medicare progr
     
      To clarify, consider the following example. If out of two providers, if Provider A has the largest claim             difference for procedures 1 and 2, and Provider B has the largest claim difference for procedure 3, then             Provider A has the largest claim difference for the larger number of procedures (2 versus 1).
 
-2. Some providers and regions are likely to be different in more subtle ways. Based on the data provided, which three providers are least like the others? Briefly explain what seems to be different about these providers. Which three regions are least like the others? Briefly explain what seems to be different about these regions.
+#2. Some providers and regions are likely to be different in more subtle ways. Based on the data provided, which three providers are least like the others? Briefly explain what seems to be different about these providers. Which three regions are least like the others? Briefly explain what seems to be different about these regions.
 
-3. Medicare staff have identified a number of records in the individual patient claims data that look unusual – they could have errors or fraudulent claims or simply be unique patient contexts that are worth review. Using the list of unusual records hand-selected by the staff as a guide, identify 10,000 additional patient recordsthat seem most likely to also need review. Briefly describe some common features in these patients.
+#3. Medicare staff have identified a number of records in the individual patient claims data that look unusual – they could have errors or fraudulent claims or simply be unique patient contexts that are worth review. Using the list of unusual records hand-selected by the staff as a guide, identify 10,000 additional patient recordsthat seem most likely to also need review. Briefly describe some common features in these patients.
 
 #Deliverables
 Each challenge submission must consist of a compressed tarball or zip file with the following contents:
