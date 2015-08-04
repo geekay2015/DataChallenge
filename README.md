@@ -6,16 +6,18 @@ You have been contracted to analyze a set of claims data from the Medicare progr
 
 #Challenge Data
 You have access to the following summary data, which aggregates information on procedures performed and billed by providers in 2011, as well as how much Medicare reimbursed:
-https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html
-https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Outpatient.html
+  1. https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html
+  2. https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Outpatient.html
 
-These data include both inpatient and outpatient procedures. Inpatient procedures are coded with DRG codes (https://en.wikipedia.org/wiki/Diagnosis-related_group), and outpatient procedures with APC codes (https://en.wikipedia.org/wiki/Ambulatory_Payment_Classification). Note that a single provider may submit claims for both inpatient and outpatient procedures, and a single patient may have undergone inpatient and outpatient procedures during the same period.
+These data include both inpatient and outpatient procedures. Inpatient procedures are coded with DRG codes (https://en.wikipedia.org/wiki/Diagnosis-related_group), and outpatient procedures with APC codes (https://en.wikipedia.org/wiki/Ambulatory_Payment_Classification). 
+
+Note that a single provider may submit claims for both inpatient and outpatient procedures, and a single patient may have undergone inpatient and outpatient procedures during the same period.
 
 In addition to the summary data, you also have access to individual patient procedure claims from 2013 and account records for individual patients. (NOTE: All data provided except for the summary inpatient and outpatient claims files are artificial and do not represent actual patient data.) The patient record data is presented as an XML dump from the Medicare patient database. All patient records have been completely anonymized and contain only a unique patient ID number and demographic information. The procedure claim records contain the procedures claimed by patient ID and date as ASCII-delimited text. (Seehttps://en.wikipedia.org/wiki/Delimiter#ASCII_delimited_text.) The date format is as prescribed by the ASC X12 837 Professional Health Care Claim Transaction, i.e. CCYYMMDD.
+(See http://www.bcbsnc.com/assets/providers/public/pdfs/837Institutional_5010_v2.5.pdf.) 
 
-(See http://www.bcbsnc.com/assets/providers/public/pdfs/837Institutional_5010_v2.5.pdf.) The patient and procedure data files are available here:
-￼￼￼￼￼￼￼￼
-https://cloudera.box.com/s/7h2sx81w73mm1ciswt5f 
+The patient and procedure data files are available here:
+￼￼￼￼￼￼￼￼https://cloudera.box.com/s/7h2sx81w73mm1ciswt5f 
 
 ##Challenge Problems
 You have been contracted to analyze a set of claims data from the Medicare program for abnormalities. Specifically, you’ve been asked to answer the following three queries:
